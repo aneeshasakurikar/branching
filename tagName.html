@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function fun1(){
+			var n=document.getElementsByTagName('p');
+			alert(n.length);
+			alert(n[2].innerHTML);
+			var i;
+			for (var i = 0; i < n.length; i++) {
+				n[i].style.backgroundColor="Red";
+			}
+		}
+	</script>
+</head>
+<body onload="fun1()">
+<p name="p1">Para 1</p>
+<p>Para 2</p>
+<p>Para 3</p>
+</body>
+</html>
